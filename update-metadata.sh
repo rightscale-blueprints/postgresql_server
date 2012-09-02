@@ -9,7 +9,7 @@ knife cookbook metadata cron -o cookbooks/
 knife cookbook metadata ntp -o cookbooks/
 knife cookbook metadata openssl -o cookbooks/
 knife cookbook metadata postfix -o cookbooks/
-#knife cookbook metadata postgresql -o cookbooks/
+knife cookbook metadata postgresql -o cookbooks/
 knife cookbook metadata python -o cookbooks/
 knife cookbook metadata sudo -o cookbooks/
 knife cookbook metadata yum -o cookbooks/

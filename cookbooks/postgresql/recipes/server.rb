@@ -61,5 +61,6 @@ bash "assign-postgres-password" do
 echo "ALTER ROLE postgres ENCRYPTED PASSWORD '#{node[:postgresql][:password][:postgres]}';" | psql
   EOH
   not_if "echo '\connect' | PGPASSWORD=#{node['postgresql']['password']['postgres']} psql --username=postgres --no-password -h localhost"
+  not_if { defined?(RightScale) }   # RightScale bug! user is not currently supported by this version of RightLink
   action :run
 end

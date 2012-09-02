@@ -120,6 +120,10 @@ For more information on using Chef Solo, see http://wiki.opscode.com/display/che
 
 ##Updating cookbooks
 
+Set this environment variable to strip .git from each cookbook checkout:
+
+	LIBRARIAN_CHEF_INSTALL__STRIP_DOT_GIT=1
+
 To update a cookbook (example, postgresql):
 	
 	librarian-chef update postgresql

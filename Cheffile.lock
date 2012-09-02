@@ -1,0 +1,108 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apache2 (1.1.12)
+    build-essential (1.1.0)
+    openssl (1.0.0)
+    yum (0.8.0)
+
+GIT
+  remote: https://github.com/coderanger/chef-collectd_plugins
+  ref: master
+  sha: d8e264da9ad982dc75978e48c14a9323db553378
+  specs:
+    collectd_plugins (1.0.0)
+      collectd (>= 0.0.0)
+
+GIT
+  remote: https://github.com/flaccid/chef-collectd
+  ref: master
+  sha: c3365623f7cb2beaddc9de296a62c42680260298
+  specs:
+    collectd (1.0.0)
+      apache2 (>= 0.0.0)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/resolver
+  ref: master
+  sha: 300e50c19c3bfb7311a30fd0ce6570e8081971c9
+  specs:
+    resolver (0.8.2)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/rightscale
+  ref: master
+  sha: 300e50c19c3bfb7311a30fd0ce6570e8081971c9
+  specs:
+    rightscale (0.0.1)
+      collectd (>= 0.0.0)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/system
+  ref: master
+  sha: 300e50c19c3bfb7311a30fd0ce6570e8081971c9
+  specs:
+    system (0.0.1)
+      cron (>= 0.0.0)
+
+GIT
+  remote: https://github.com/flaccid/postfix
+  ref: master
+  sha: 6729a86466a27983fc52807f6edddd88a70cf41c
+  specs:
+    postfix (1.2.0)
+
+GIT
+  remote: https://github.com/flaccid/postgresql
+  ref: master
+  sha: d9aeb1d78f6215e43eb8cec7ca613d2d193b1bea
+  specs:
+    postgresql (1.0.1)
+      openssl (>= 0.0.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/cron
+  ref: master
+  sha: 930beae4cfeb07bb5193366d7c89014f76dbb9ea
+  specs:
+    cron (1.0.5)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/ntp
+  ref: master
+  sha: 3991185e38b07a09f8a6a4994dc6d778670a11a2
+  specs:
+    ntp (1.1.9)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/python
+  ref: master
+  sha: e7d06b4db5aec229a4737b8025482df013ebaefe
+  specs:
+    python (1.0.8)
+      build-essential (>= 0.0.0)
+      yum (>= 0.0.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/sudo
+  ref: master
+  sha: b60e6dd6668d02e6e035c007118d8bbbddb8112f
+  specs:
+    sudo (1.1.1)
+
+DEPENDENCIES
+  collectd (>= 0)
+  collectd_plugins (>= 0)
+  cron (>= 0)
+  ntp (>= 0)
+  postfix (>= 0)
+  postgresql (>= 0)
+  python (>= 0)
+  resolver (>= 0)
+  rightscale (>= 0)
+  sudo (>= 0)
+  system (>= 0)
+

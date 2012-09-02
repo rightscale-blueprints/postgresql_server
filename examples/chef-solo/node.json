@@ -1,0 +1,3 @@
+{
+  "run_list": [ "system", "resolver", "rightscale", "postgresql", "postgresql::server" ]
+}

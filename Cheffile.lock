@@ -47,6 +47,14 @@ GIT
       cron (>= 0.0.0)
 
 GIT
+  remote: https://github.com/flaccid/postgresql
+  ref: master
+  sha: fa88a8dff17f6a70a3b5ad9181389dbfcc5a8f43
+  specs:
+    postgresql (1.0.1)
+      openssl (>= 0.0.0)
+
+GIT
   remote: https://github.com/opscode-cookbooks/cron
   ref: master
   sha: 930beae4cfeb07bb5193366d7c89014f76dbb9ea
@@ -59,14 +67,6 @@ GIT
   sha: 3991185e38b07a09f8a6a4994dc6d778670a11a2
   specs:
     ntp (1.1.9)
-
-GIT
-  remote: https://github.com/opscode-cookbooks/postgresql
-  ref: master
-  sha: d9aeb1d78f6215e43eb8cec7ca613d2d193b1bea
-  specs:
-    postgresql (1.0.1)
-      openssl (>= 0.0.0)
 
 DEPENDENCIES
   collectd (>= 0)

@@ -31,5 +31,5 @@ cookbook 'collectd_plugins',
   :ref => 'master'
   
 cookbook 'postgresql',
-  :git => 'https://github.com/opscode-cookbooks/postgresql',
+  :git => 'https://github.com/flaccid/postgresql',
   :ref => 'master'

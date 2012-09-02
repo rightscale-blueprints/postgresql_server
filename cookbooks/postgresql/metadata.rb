@@ -4,6 +4,7 @@ license           "Apache 2.0"
 description       "Installs and configures postgresql for clients or servers"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version           "1.0.1"
+
 recipe            "postgresql", "Includes postgresql::client"
 recipe            "postgresql::client", "Installs postgresql client package(s)"
 recipe            "postgresql::server", "Installs postgresql server packages, templates"
@@ -19,3 +20,9 @@ end
 end
 
 depends "openssl"
+
+attribute "postgresql/password/postgres",
+  :display_name => "PostgreSQL postgress password",
+  :description => "The postgres user password.",
+  :required => "required",
+  :recipes => [ "postgresql::server" ]

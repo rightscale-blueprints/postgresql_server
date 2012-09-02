@@ -2,9 +2,7 @@ SITE
   remote: http://community.opscode.com/api/v1
   specs:
     apache2 (1.1.12)
-    build-essential (1.1.0)
     openssl (1.0.0)
-    yum (0.8.0)
 
 GIT
   remote: https://github.com/coderanger/chef-collectd_plugins
@@ -49,13 +47,6 @@ GIT
       cron (>= 0.0.0)
 
 GIT
-  remote: https://github.com/flaccid/postfix
-  ref: master
-  sha: 6729a86466a27983fc52807f6edddd88a70cf41c
-  specs:
-    postfix (1.2.0)
-
-GIT
   remote: https://github.com/flaccid/postgresql
   ref: master
   sha: d9aeb1d78f6215e43eb8cec7ca613d2d193b1bea
@@ -77,32 +68,12 @@ GIT
   specs:
     ntp (1.1.9)
 
-GIT
-  remote: https://github.com/opscode-cookbooks/python
-  ref: master
-  sha: e7d06b4db5aec229a4737b8025482df013ebaefe
-  specs:
-    python (1.0.8)
-      build-essential (>= 0.0.0)
-      yum (>= 0.0.0)
-
-GIT
-  remote: https://github.com/opscode-cookbooks/sudo
-  ref: master
-  sha: b60e6dd6668d02e6e035c007118d8bbbddb8112f
-  specs:
-    sudo (1.1.1)
-
 DEPENDENCIES
   collectd (>= 0)
   collectd_plugins (>= 0)
-  cron (>= 0)
   ntp (>= 0)
-  postfix (>= 0)
   postgresql (>= 0)
-  python (>= 0)
   resolver (>= 0)
   rightscale (>= 0)
-  sudo (>= 0)
   system (>= 0)
 

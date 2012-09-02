@@ -49,7 +49,7 @@ GIT
 GIT
   remote: https://github.com/flaccid/postgresql
   ref: master
-  sha: fa88a8dff17f6a70a3b5ad9181389dbfcc5a8f43
+  sha: 20ac2740619d7ad73d6dcafca7f53f86f7e46a50
   specs:
     postgresql (1.0.1)
       openssl (>= 0.0.0)

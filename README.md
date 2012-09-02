@@ -131,6 +131,10 @@ To update a cookbook (example, postgresql):
 To refresh all the cookbooks in `cookbooks/` per the `Cheffile`, run the following:
 
 	librarian-chef install
+
+To (re)install the cookbooks clean and with verbose:
+
+	librarian-chef install --clean --verbose
 	
 #Errata
 
